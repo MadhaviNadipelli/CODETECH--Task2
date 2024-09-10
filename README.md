@@ -12,7 +12,7 @@ OVERVIEW OF THE PROJECT
 
 Project:Student Grade Tracker
 
-Objective
+OBJECTIVE
 
 The objective of a student grade tracker is to systematically record, organize, and analyze students' academic performance data. It aims to provide an easy-to-use platform for tracking grades, identifying trends, and offering insights into students' strengths and weaknesses.supports personalized learning.
 
