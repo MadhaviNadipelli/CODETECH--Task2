@@ -1,0 +1,70 @@
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.grades = {}
+
+    def add_grade(self, subject, grade):
+        self.grades[subject] = grade
+
+    def get_grade(self, subject):
+        return self.grades.get(subject)
+
+    def average_grade(self):
+        return sum(self.grades.values()) / len(self.grades)
+
+
+class GradeTracker:
+    def __init__(self):
+        self.students = {}
+
+    def add_student(self, name):
+        self.students[name] = Student(name)
+
+    def get_student(self, name):
+        return self.students.get(name)
+
+    def print_student_grades(self, name):
+        student = self.get_student(name)
+        if student:
+            print(f"Grades for {name}:")
+            for subject, grade in student.grades.items():
+                print(f"{subject}: {grade}")
+            print(f"Average grade: {student.average_grade()}")
+
+
+tracker = GradeTracker()
+
+while True:
+    print("1. Add student")
+    print("2. Add grade")
+    print("3. Get grade")
+    print("4. Print student grades")
+    print("5. Exit")
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        name = input("Enter student name: ")
+        tracker.add_student(name)
+    elif choice == "2":
+        name = input("Enter student name: ")
+        subject = input("Enter subject: ")
+        grade = float(input("Enter grade: "))
+        student = tracker.get_student(name)
+        if student:
+            student.add_grade(subject, grade)
+    elif choice == "3":
+        name = input("Enter student name: ")
+        subject = input("Enter subject: ")
+        student = tracker.get_student(name)
+        if student:
+            grade = student.get_grade(subject)
+            if grade:
+                print(f"Grade for {name} in {subject}: {grade}")
+    elif choice == "4":
+        name = input("Enter student name: ")
+        tracker.print_student_grades(name)
+    elif choice == "5":
+        break
+    else:
+        print("Invalid option. Please choose a valid option.")
