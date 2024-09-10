@@ -13,6 +13,7 @@ OVERVIEW OF THE PROJECT
 Project:Student Grade Tracker
 
 Objective
+
 The objective of a student grade tracker is to systematically record, organize, and analyze students' academic performance data. It aims to provide an easy-to-use platform for tracking grades, identifying trends, and offering insights into students' strengths and weaknesses.supports personalized learning.
 
 KEY ACTIVITIES
@@ -26,4 +27,5 @@ KEY ACTIVITIES
 8. Supporting Communication: Facilitating communication between teachers, students, and parents regarding academic progress.
 
 TECHNOLOGIES USED
+
 PYTHON:The primary programming language for data analysis.
