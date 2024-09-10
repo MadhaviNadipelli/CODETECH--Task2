@@ -9,6 +9,7 @@ Domain:PYTHON PROGRAMMING
 Duration:AUG TO SEP 2024
 
 OVERVIEW OF THE PROJECT
+
 Project:Student Grade Tracker
 
 Objective
